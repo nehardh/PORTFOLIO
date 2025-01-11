@@ -5,4 +5,10 @@ declare namespace JSX {
       primitive: any;
     }
   }
+
+  declare module "@react-three/fiber" {
+    interface ThreeElements {
+      threeGlobe: Object3DNode<ThreeGlobe, typeof ThreeGlobe>;
+    }
+  }
   
