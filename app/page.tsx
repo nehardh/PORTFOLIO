@@ -5,7 +5,7 @@ import { FloatingNav } from "@/components/ui/FloatinNav";
 import RecentProjects from "@/components/RecentProjects";
 import Activity from "@/components/Activity";
 import Experience from "@/components/Experience";
-import Approach from "@/components/Approach";
+//import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 
 export default function Home() {
