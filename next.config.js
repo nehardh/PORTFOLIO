@@ -1,6 +1,4 @@
-import { withSentryConfig } from '@sentry/nextjs';
-
-const config = {
+const nextConfig = {
   reactStrictMode: true,
   // Other configurations
   output: 'export',
@@ -9,20 +7,5 @@ const config = {
   },
 };
 
-const sentryConfig = {
-  org: 'nehardh-m',
-  project: 'javascript-nextjs',
-  silent: !process.env.CI,
-  widenClientFileUpload: true,
-  reactComponentAnnotation: {
-    enabled: true,
-  },
-  hideSourceMaps: true,
-  disableLogger: true,
-  automaticVercelMonitors: true,
-  sourcemaps: {
-    disable: true,
-  },
-};
-
-export default withSentryConfig(config, sentryConfig);
+// Export the final config
+export default nextConfig;
